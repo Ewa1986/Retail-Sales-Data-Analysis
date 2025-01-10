@@ -45,8 +45,11 @@ I decided to use data visualisation as clear visual representation aids in bette
 Data Visualisation - can oversimplyfy data or mislead if not designed carefully. There is no alternative to this method. 
 
 Descriptive Statistics - sensitive to outliers, assumes normal distribution which is not always the case, oversimplify patterns and relationships
+
 Trend Analysis - assumes that historical trends continue
+
 Impact Analysis - correlation vs causation: may identify relationships without proving causation
+
 Comperative Analysis - comparison can be misleading if datasets have diffrent structures or scales which wasn't the case in this project 
 
 In my view, combining all these techniques within a project ensures success by providing a comprehensive and balanced analysis.
