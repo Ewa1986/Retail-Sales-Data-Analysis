@@ -1,90 +1,76 @@
-# Project XYZ
+# Retail Sales Data Analysis Project
 
-**Project XYZ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+**Retail Sales Data Analysis Project ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. 
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
+
+Historical sales data for 45 stores located in different regions - each store contains a number of departments. The    
+Data from the Excel sheets (Stores, Features, Sales) downloaded from https://www.kaggle.com/datasets/manjeetsingh/retaildataset/data .
 
 
 ## Business Requirements
-* Describe your business requirements
+ 
+Analyse retail sales data to identify trends, insights, and the impact of promotional markdowns on sales. 
+Provide comprehensive, visually appealing sales reports and insights to assist in strategic decision-making.
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+
+* Bigger shops generates more sales - check using Data Visualisation
+* Majority of sales are happening over non-holidays weeks - check using Data Visualisation
+* There is a massive pick in a sales over Christmas period - check using Data Visualisation
+* All the shops (Type A, B and C) are experiencing pick time over the Christmas - check using Data Visualisation
+* Markdowns during non - holidays weeks has smaller impact on sales rather than during holidays - check using Data Visualisation
 
 ## Project Plan
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+1. Downloading data set
+2. ETL Pipeline: Extract, Transform and Load
+3. Suggesting hypothesis
+4. Data Visualisation: Descriptive Statistics, Trend Analysis, Impact Analysis & Comprehensive Analysis
+5. Concluding 
+
+I decided to use data visualisation as clear visual representation aids in better decision-making. 
 
 ## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
+
+* Pinpoint which stores generate the highest weekly sales - Average Weekly Sales per Store and Department (bar chart)
+* Detect seasonal trends and cyclic pattern in sales - Average sales trend by type (line chart)
+* Examine if larger stores drive higher sales - Correlation between store size and weekly sales (scatter chart)
+
 
 ## Analysis techniques used
+
+
 * List the data analysis methods used and explain limitations or alternative approaches.
 * How did you structure the data analysis techniques. Justify your response.
 * Did the data limit you, and did you use an alternative approach to meet these challenges?
 * How did you use generative AI tools to help with ideation, design thinking and code optimisation?
 
 ## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
-
-## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+* Analysed data set didn't include sensitive information like names, contact details, purchase history therfore there was no ethical consideration involved. 
+* There was no legal or social concerns as well. 
 
 ## Unfixed Bugs
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+* I didn't leave any unfixed bugs, but unfortunately I coudn't fully utlised plotly as my laptop has insufficient RAM. One of plots generated by me was causing gitpod website to crash and subsequently I had to delete it plot and use instead Matplotlib in my project. 
+
+I recognised that I have limited knowledge about gitpod and to address that I visited LMS platform and I watched few videos on youtube about the platform.
 
 ## Development Roadmap
 * What challenges did you face, and what strategies were used to overcome these challenges?
 * What new skills or tools do you plan to learn next based on your project experience? 
 
-## Deployment
-### Heroku
-
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
-
-
 ## Main Data Analysis Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
-
+* pandas
+* numpy
+* plotly.express
+* plotly.graph_objects as go imported but not used as my laptop crashed while I used it
+* seaborn
+* matplotlib
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+* Content:
 
-### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
-
-
-
-## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+* Media:
